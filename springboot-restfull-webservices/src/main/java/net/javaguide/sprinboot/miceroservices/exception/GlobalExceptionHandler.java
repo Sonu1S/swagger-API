@@ -43,6 +43,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler{
 			);
 		return new ResponseEntity<ErrorDetails>(errorDetails,HttpStatus.BAD_REQUEST);
 	}
+	
 	//Handle Global Exception apart from these two Exception
 	@ExceptionHandler(Exception.class)
 	public ResponseEntity<ErrorDetails> hadleGlobalException(Exception exception,

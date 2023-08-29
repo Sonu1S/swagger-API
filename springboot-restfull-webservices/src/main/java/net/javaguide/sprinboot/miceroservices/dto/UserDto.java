@@ -27,7 +27,7 @@ public class UserDto {  //Validation is Not Working
 			)
   //user Lirst Name Should not be null and Empty
 	@NotNull
-	@NotEmpty(message = "User First Name Shoud Not be Empty")
+	@NotEmpty(message = "User Last Name Shoud Not be Empty")
 	private String lastName;
 	
 	@Schema(
